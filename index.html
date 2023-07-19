@@ -4,9 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 wrapper">
+          <div class="panel">
+            <div class="title">
+              <h2>Kalkulator BMI</h2>
+            </div>
+            <div class="calculator">
+              <p>
+                Berat badan ideal adalah berat badan yang dianggap paling menyehatkan bagi seseorang dengan mengacu pada tinggi badannya. Dengan kata lain, berat badan inilah yang akan memberikan angka harapan hidup paling tinggi bagi Anda.
+                Yuk, hitung sekarang dikalkulator BMI.
+              </p>
+              <div class="content">
+                <form action="" class="form-horizontal">
+                  <div class="mb-3">
+                    <label for="gender" class="form-label">Gender</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Pria</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Wanita</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="weight" class="form-label">Berat Badan(kg):</label>
+                    <input name="weight" type="number" class="form-control" id="weight" placeholder="Masukkan berat badan" min="1" max="999" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="age" class="form-label">Usia(tahun):</label>
+                    <input name="age" type="number" class="form-control" id="age" placeholder="Masukkan usia min 18" min="1" max="999">
+                  </div>
+                  <div class="mb-3">
+                    <label for="height" class="form-label">Tinggi Badan(cm):</label>
+                    <input name="height" type="number" class="form-control" id="height" placeholder="Masukkan tinggi badan" min="1" max="999">
+                  </div>
+                  <div class="d-grid gap-2 d-md-block">
+                    <button type="submit" class="btn btn-primary">Hitung BMI</button>
+                    <button type="reset" class="btn btn-secondary" id="cancelBtn">Reset</button>
+                  </div>
+                </form>
+              </div>
+              <div>
+                <p>
+                  Keunggulan fitur
+                  <ol>
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                  </ol>
+                  Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                  Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="col-md-6 wrapper">
+          <div class="panel">
+            <div class="header">
+              <h2>Result</h2>
+            </div>
+            <div class="content">
+              <div class="result text-center">
+                <br>
+                <a href="#" class="btn btn-primary">Download hasil BMI</a>
+              </div>  
+            </div>
+            <div id="explanation">
+              <div id="detail"></div>
+              <div class="d-grid gap-2 d-md-block">
+                <a href="#" class="btn btn-primary">Konsultasi Ahli Gizi via Aplikasi</a>
+                <a href="#" class="btn btn-primary">Registrasi Online Ahli Gizi</a>
+              </div>
+              <p>
+                BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+              </p>
+            </div>
+            <div class="content text-center">
+              <br>
+              <div class="d-grid gap-2 d-md-block">
+                <a href="#" class="btn btn-primary">Konsultasi Dokter via Aplikasi</a>
+                <a href="#" class="btn btn-primary">Registrasi Online Sekarang</a>
+              </div>
+            </div>
+            <div class="image text-center">
+              <h4>Download Aplikasi</h4>
+              <a href="#"><img src="/images/app-store-logo.png" alt="appstore" srcset=""></a>
+              <a href="#"><img src="/images/play-store-logo.png" alt="playstore" srcset=""></a>              
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </html>

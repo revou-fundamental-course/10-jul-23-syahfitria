@@ -1,0 +1,53 @@
+html {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  width: auto;
+}
+
+.container-fluid div.wrapper{
+  padding: 15px 35px;
+}
+
+.container-fluid div.panel{
+  padding: 20px 35px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.content{ 
+  background: #e0e0e0;
+  padding: 15px;
+}
+
+.wrapper div#explanation{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.wrapper div.image{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+div.image img{
+  width: auto;
+  height: 50px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
