@@ -1,21 +1,27 @@
-html {
-  font-family: Arial, sans-serif;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+*,
 body {
-  margin: 0;
-  padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+ 
+html,
+body {
+    height: 100%;
 }
 
 .container-fluid {
   width: auto;
 }
 
-.container-fluid div.wrapper{
+div.wrapper{
   padding: 15px 35px;
 }
 
-.container-fluid div.panel{
+div.panel{
   padding: 20px 35px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -23,14 +29,19 @@ body {
 .content{ 
   background: #e0e0e0;
   padding: 15px;
+  margin: 10px 0px;
 }
 
-.wrapper div#explanation{
+div.panel{
+  height:100%
+}
+
+div#explanation{
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
-.wrapper div.image{
+div.image{
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -40,6 +51,27 @@ div.image img{
   height: 50px;
 }
 
+p{
+  font-size: 12px;
+}
+
+ol li{
+  font-size: 12px;
+}
+
+.mv-up {
+  margin-bottom: 8px !important;
+}
+
+.invalid-feedback {
+  color: #ff606e;
+}
+
+.valid-feedback {
+  color: #2acc80;
+}
+
+/* Remove number field arrow */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
